@@ -18,6 +18,8 @@
 // /  ---> inside going
 
 
+// GreenBasket
+// 12345 --> password
 
 
 // CART.JS
@@ -61,10 +63,14 @@
 // send otp
 // verify otp
 
-
-// 1.register   --> sai do it
-// login      --> sai do it
-// products add --> sai do it
+// ADMIN SAI WEBSITE CREATE
+// "name":"saireddy",
+// "email":"saireddy@gmail.com",
+// "password":"12345"
+// 1.register       --> sai do it
+// 2.login            --> sai do it
+// 2.token pass it  --> bareer token
+// 3.products add it  --> sai do it
 
 // 2. Another user
 // name

@@ -1,6 +1,7 @@
 
 const express = require("express");
 const dotenv = require("dotenv");
+dotenv.config();
 const mongoose = require("mongoose");
 const dns = require("dns");
 const path = require("path");// Images
@@ -14,7 +15,7 @@ const emailRoutes   = require("./routes/emailRoute")
 const cartRoutes     = require("./routes/cartsRoute")
 
 
-dotenv.config();
+// dotenv.config();
 express.Router()   
 const app = express();
 const PORT = process.env.PORT || 9000;

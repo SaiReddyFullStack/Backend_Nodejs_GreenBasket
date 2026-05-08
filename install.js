@@ -5,7 +5,9 @@
 // npm init -y
 // npm i express,
 
-// nodemon,mongoose --> database connect kosam
+// nodemon,mongoose+mongodb --> database connect kosam
+// GreenBasket
+// 12345 --> password
 
 // .env
 // dotenv,

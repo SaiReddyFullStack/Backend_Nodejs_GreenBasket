@@ -20,15 +20,28 @@ exports.createProduct = async (req, res) => {
 
 
 // exports  ---> file lo no.of functions are their, vera vera file lo use cheyyadaki use it exports.
-
-
 // products get here
 // FUNCTION
-exports.getProducts = async(req,res)=>{
+// products get here
+exports.getProducts = async (req, res) => {
     try {
+        const totalProducts = await Product.countDocuments(); // total count
+
         const newProducts = await Product.find()
-        return res.status(201).json({msg:"success",newProducts})
+            .skip(0)
+            .limit(28);
+
+        return res.status(200).json({
+            msg: "success",
+            totalProducts,   // total = 28
+            showing: newProducts.length, // showing = 25
+            newProducts
+        });
+
     } catch (error) {
-         console.error(error.message);   
+        console.error(error.message);
+        return res.status(500).json({
+            msg: "Server Error"
+        });
     }
-}
+};
