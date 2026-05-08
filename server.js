@@ -52,3 +52,8 @@ mongoose
     console.log("MongoDB error:", err.message);
     process.exit(1);
   });
+
+  app.use('/',(req,res)=>{
+    res.send("<h1>Welcome to New User</h1>")
+  })
+  
