@@ -54,6 +54,6 @@ mongoose
   });
 
   app.use('/',(req,res)=>{
-    res.send("<h1>Welcome to New User</h1>")
+    res.send("<h1>Welcome to GreenBasket</h1>")
   })
   
